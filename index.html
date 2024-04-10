@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1e5ce438fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <title>Calculadora de IMC</title>
+  </head>
+  <body>
+    <main id="container">
+      <section id="img">
+        <img
+          src="assets/images/undraw_energizer_re_vhjv.svg"
+          alt="Ilustração"
+        />
+      </section>
+
+      <section id="calculator">
+        <form id="form">
+          <h1 id="titulo">Calculadora - IMC</h1>
+
+          <div class="caixa_input">
+            <label for="peso">Peso em kg</label>
+            <div id="campo_input">
+              <i class="fa-solid fa-weight-hanging"></i>
+              <input type="number" id="peso" />
+              <span>kg</span>
+            </div>
+          </div>
+          <div cass="caixa_input">
+            <label for="altura">Altura em metros</label>
+            <div id="campo_input">
+              <i class="fa-solid fa-ruler"></i>
+              <input type="number" id="altura" step="0.01" />
+              <span>m</span>
+            </div>
+          </div>
+
+          <button id="calcular">Calcular</button>
+        </form>
+
+        <div id="info" class="hidden">
+          <div id="resultado">
+            <div id="imc">
+              <span id="valor"></span>
+              <span>Seu IMC</span>
+            </div>
+            <div id="descricao">
+              <span>Normal</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
